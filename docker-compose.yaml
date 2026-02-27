@@ -1,0 +1,15 @@
+services:
+  desmotive-me:
+    container_name: desmotive-me
+    build:
+      context: ./desmotive-me
+      dockerfile: Dockerfile
+    ports:
+      - "30000:5173"
+      - "33000:3001"
+    volumes:
+      - ./desmotive-me:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    restart: unless-stopped
