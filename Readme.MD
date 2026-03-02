@@ -27,7 +27,7 @@ cd desmotive-me
 
 ## 📌 1️⃣ Criar arquivo de frases
 
-Criar o arquivo:
+Criar o arquivo: desmotive-me/src/quotes.js
 
 Conteúdo:
 
